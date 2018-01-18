@@ -1,0 +1,73 @@
+body{
+    background-color: #212121;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover{
+    color: inherit; /* Inherits color property from its parent */
+}
+
+h1 {
+    font-size: 36px;
+    color: #fafafa  ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+    font-size: 36px;
+    color: #fafafa ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.nav {
+    font-size: 20px;
+    font-weight: 400;
+    color: #E24E42;
+}
+
+.typing {
+    font-size: 40px;
+    color: #fafafa  ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.list {
+    font-size: 30px;
+    color: #fafafa  ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+color-palette {
+    #E9B000
+    #E24E42
+    #008F95
+    #F8EEE7
+    #DFDCE3
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+
+<body>
+    <!--div style="height: 70vh;">
+        <div style="padding-top: 7%; padding-left: 7%">
+            <h1 align="">Hi, I'm Kevin.</h1>
+            <h2 align="">I like to code and design.</h2>
+        </div>
+            <div class="container" style="padding-top: 40px;">
+              <div class="row nav">
+                <div align="right" class="col-8">
+                  Resume
+                </div>
+                <div align="right" class="col-2">
+                  Projects
+                </div>
+                <div align="right" class="col-2">
+                 Contact
+                </div>
+              </div>
+          </div-->
+    </div>
+
+    <div class="typing-animation typing" style="padding-top: 7%; padding-left: 7%;">
+        <span id="quote"></span>
+            <div id="hide" class="container" style="display:none; padding-top: 40px;">
+                <div class="row list">
+                    <div align="left" class="col-4">
+                        <a href>Enova Redesign</a>
+                    </div>
+                    <div align="left" class="col-4">
+                        <a href>Pablo's Escape</a>
+                    </div>
+                    <div align="left" class="col-4">
+                        <a href>UK Food Trends</a>
+                    </div>
+              </div>
+              <div class="row list" style="padding-top: 30px;">
+                  <div align="left" class="col-4">
+                      <a href>Website Iterations</a>
+                  </div>
+                  <div align="left" class="col-4">
+                      <a href>HBCBF Redesign</a>
+                  </div>
+            </div>
+
+          </div>
+    </div>
+
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+    <script>
+        $(function(){
+            $("#quote").typed({
+                strings: ["> cd Kevin_Tran <br> > ^700 ls Portfolio/Projects"],
+                typeSpeed: 75,
+            });
+        });
+
+        setTimeout(function() {
+            $('#hide').show()
+        }, 6000);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+
+</html>
