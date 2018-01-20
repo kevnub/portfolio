@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+#enova {display:none;}
+#pablo {display:none;}
+
+.something {
+    background-color: #212121;
+}
+
+.typing {
+    font-size: 20px;
+    color: #fafafa  ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.list {
+    font-size: 17px;
+    color: #fafafa  ;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/*phone landscape*/
+@media (min-width: 576px) {
+    .typing {
+        font-size: 25px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .list {
+        font-size: 20px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .typing {
+        font-size: 30px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .list {
+        font-size: 25px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+}
+
+/*desktop and up*/
+@media (min-width: 992px) {
+    .typing {
+        font-size: 40px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    .list {
+        font-size: 30px;
+        color: #fafafa  ;
+        font-weight: 400;
+        font-family: 'Source Code Pro', monospace;
+    }
+}
+
 body{
     background-color: #212121;
 }
@@ -11,17 +85,32 @@ a:hover{
 }
 
 h1 {
-    font-size: 36px;
-    color: #fafafa  ;
-    font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
+    font-size: 45px;
+    color: #212121  ;
+    font-weight: 500;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1.title {
+    font-size: 60px;
+    color: #212121  ;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 55px;
 }
 
 h2 {
-    font-size: 36px;
-    color: #fafafa ;
-    font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+    color: #212121 ;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.article{
+    font-size: 20px;
+    color: #212121;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav {
@@ -30,18 +119,22 @@ h2 {
     color: #E24E42;
 }
 
-.typing {
-    font-size: 40px;
-    color: #fafafa  ;
-    font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.list {
-    font-size: 30px;
-    color: #fafafa  ;
-    font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
+.skill {
+  border: 1px solid #50a9d1;
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: auto;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.33333em;
+  padding: 7px 18px;
+  margin-top: 0.8em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
 }
 
 color-palette {
