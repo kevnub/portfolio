@@ -7,73 +7,144 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
         <title>Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script></script>
     </head>
 
-<body>
-    <!--div style="height: 70vh;">
-        <div style="padding-top: 7%; padding-left: 7%">
-            <h1 align="">Hi, I'm Kevin.</h1>
-            <h2 align="">I like to code and design.</h2>
-        </div>
-            <div class="container" style="padding-top: 40px;">
-              <div class="row nav">
-                <div align="right" class="col-8">
-                  Resume
-                </div>
-                <div align="right" class="col-2">
-                  Projects
-                </div>
-                <div align="right" class="col-2">
-                 Contact
-                </div>
-              </div>
-          </div-->
-    </div>
+<body class="something">
 
+    <!--div class="d-none d-sm-block container-fluid list" align="right" style="color: white; font-size: 15px; padding-top: 3%; padding-right: 3%; margin-bottom: -40px;"> about me <br> contact</div-->
+
+<!--Landing-->
     <div class="typing-animation typing" style="padding-top: 7%; padding-left: 7%;">
         <span id="quote"></span>
-            <div id="hide" class="container" style="display:none; padding-top: 40px;">
+        <div class="d-none d-sm-block">
+            <div id="hide" class="container" style="padding-top: 40px; display:none;"> <!--style="display:none;-->
                 <div class="row list">
                     <div align="left" class="col-4">
-                        <a href>Enova Redesign</a>
+                        <a href="#enova" id="enovabutton">Enova Redesign</a>
                     </div>
                     <div align="left" class="col-4">
-                        <a href>Pablo's Escape</a>
+                        <a href="#pablo" id="pablobutton">Pablo's Escape</a>
                     </div>
                     <div align="left" class="col-4">
                         <a href>UK Food Trends</a>
                     </div>
-              </div>
-              <div class="row list" style="padding-top: 30px;">
-                  <div align="left" class="col-4">
-                      <a href>Website Iterations</a>
-                  </div>
-                  <div align="left" class="col-4">
-                      <a href>HBCBF Redesign</a>
-                  </div>
+                </div>
+                <div class="row list" style="padding-top: 30px;">
+                    <div align="left" class="col-4">
+                        <a href>Website Iterations</a>
+                    </div>
+                    <div align="left" class="col-4">
+                        <a href>HBCBF Redesign</a>
+                    </div>
+                    <div align="left" class="col-4" style="color: #ffff00;">
+                        <a href>*About Me</a>
+                    </div>
+                </div>
             </div>
+        </div>
 
-          </div>
+        <div class="d-sm-none d-md-none d-lg-none d-xl-none">
+            <div id="hide2"  style="padding-top: 15px; display:none;"> <!--style="display:none;-->
+                <ul class="list" style="list-style-type: none;">
+                    <li><a href="#enova" id="enovabutton2">Enova Redesign</a></li>
+                    <li><a href="#pablo" id="pablobutton">Pablo's Escape</a></li>
+                    <li><a href="#pablo" id="pablobutton">UK Food Trends</a></li>
+                    <li><a href="#pablo" id="pablobutton">Website Iterations</a></li>
+                    <li><a href="#pablo" id="pablobutton">HBCBF Redesign</a></li>
+                    <li><a href="#pablo" id="pablobutton" style="color: #ffff00;">*About Me</a></li>
+                </ul>
+        </div>
+    </div>
     </div>
 
+<!-- Enova Article-->
+    <div id="enova" class="" style="background-color: #fafafa; margin-top: 12%;">
+        <div class="container" style="padding-left: 7%; padding-right: 7%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1 class="title" > Enova Website Redesign </h1>
+                    <h2 style="padding-top: 20px;"> Redesign and code implementation of a small-scale website.
+                            Demo the website here.</h2>
+                    <p class="article" style="padding-bottom: 40px; font-size: 35px;" >
+                        <!--Redesign and code implementation of a small scale website. <br-->
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">Javascript</span>
+                        <span class="skill">MaterializeCSS</span>
+                        <span class="skill">Sketch</span>
+                    </p>
+                    <h1> Introduction </h1>
+                    <p class="article" >
+                        Enova is a biomimicry engineering group on campus at the University of Calgary that contacted
+                        me to redesign their website. They had already designed and implemented code their club website
+                        but wanted something that looked more professional.</br>This project took less than a week to complete
+                        since I was able to frequently meet up with the client to make sure I was providing everything they wanted. <br><br>
+                        Since I was the one to implement the code for the website, I designed something that was within my coding
+                        capabilities. I wanted to take advantage of the MaterializeCSS framework that I used to create this website
+                        and, as a result, I was able to quickly come up with high-fidelity prototypes for the client.
+                    </p>
+                    <h1 > The Home Page </h1>
+                    <p class="article">
+                        The original design for the homepage was not very user friendly. Each of the letters in
+                        the word "Innovate" were links that led to different parts of their website, but there was
+                        no indication of where each link would take the user, so I decided to scrap the idea altogether.
+                        There is also the issue where the words "Innovate", "Educate", and "Promote" were too large to even
+                        fit on a screen without having to zoom out.
+                        <br><br>
+                        From asking the club members some general questions, it seemed that the visitors of this website
+                        would be potential sponsors and people in the engineering industry who wanted to know more about the
+                        club. I then designed the homepage to clearly show the club's name, tagline, and mission statement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Pablo's Escape Article-->
+    <div id="pablo" class="" style="background-color: #fafafa; margin-top: 12%;">
+        <div class="container" style="padding-left: 7%; padding-right: 7%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1 class="title" > Pablo's Escape </h1>
+                    <p class="article" style="padding-bottom: 40px;" >
+                        <!--Redesign and code implementation of a small scale website. <br-->
+                        <span class="skill">C#</span>
+                        <span class="skill">Android Studio</span>
+                        <span class="skill">Android SDK</span>
+                        <span class="skill">Unity Engine</span>
+                    </p>
+                    <h1> Introduction </h1>
+                    <p class="article" >
+                        Enova is a biomimicry engineering group on campus at the University of Calgary that contacted
+                        me to redesign their website. They had already designed and implemented code their club website
+                        but wanted something that looked more professional.</br>This project took less than a week to complete
+                        since I was able to frequently meet up with the client to make sure I was providing everything they wanted. <br><br>
+                        Since I was the one to implement the code for the website, I designed something that was within my coding
+                        capabilities. I wanted to take advantage of the MaterializeCSS framework that I used to create this website
+                        and, as a result, I was able to quickly come up with high-fidelity prototypes for the client.
+                    </p>
+                    <h1 > The Home Page </h1>
+                    <p class="article">
+                        The original design for the homepage was not very user friendly. Each of the letters in
+                        the word "Innovate" were links that led to different parts of their website, but there was
+                        no indication of where each link would take the user, so I decided to scrap the idea altogether.
+                        There is also the issue where the words "Innovate", "Educate", and "Promote" were too large to even
+                        fit on a screen without having to zoom out.
+                        <br><br>
+                        From asking the club members some general questions, it seemed that the visitors of this website
+                        would be potential sponsors and people in the engineering industry who wanted to know more about the
+                        club. I then designed the homepage to clearly show the club's name, tagline, and mission statement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-    <script  src="index.js"></script>
-    <script>
-        $(function(){
-            $("#quote").typed({
-                strings: ["> cd Kevin_Tran <br> > ^700 ls ~/Portfolio/Projects"],
-                typeSpeed: 75,
-            });
-        });
-
-        setTimeout(function() {
-            $('#hide').show()
-        }, 6000);
-    </script>
-
+    <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 </body>
