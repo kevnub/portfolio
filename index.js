@@ -1,3 +1,38 @@
+$(function(){
+    $("#quote").typed({
+        strings: ["> cd Kevin_Tran<br>  > ^500 ls ~/Portfolio/Projects"],
+        typeSpeed: 35, //75
+    });
+});
+
+setTimeout(function() {
+    $('#hide').fadeIn('fast');
+    $('#hide2').fadeIn('fast')
+}, 4100);
+
+$('#enovabutton, #enovabutton2').click(function(e){
+    $('#pablo').hide();
+    $('#enova').fadeIn('slow');
+});
+
+$('#pablobutton, #pablobutton2').click(function(e){
+    $('#enova').hide();
+    $('#pablo').fadeIn('slow');
+})
+
+/*Smooth Scroll*/
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top},
+                800,
+                function(){window.location.hash = hash;});
+        }});
+});
+
 // The MIT License (MIT)
 
 // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
