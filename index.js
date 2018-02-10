@@ -1,24 +1,50 @@
 $(function(){
     $("#quote").typed({
         strings: ["> cd Kevin_Tran<br>  > ^500 ls ~/Portfolio/Projects"],
-        typeSpeed: 35, //75
+        typeSpeed:10, //75
     });
 });
 
 setTimeout(function() {
     $('#hide').fadeIn('fast');
     $('#hide2').fadeIn('fast')
-}, 4100);
+}, 3000);
 
 $('#enovabutton, #enovabutton2').click(function(e){
-    $('#pablo').hide();
+    $('#pablo, #food, #garden, #portfolio').hide();
     $('#enova').fadeIn('slow');
 });
 
 $('#pablobutton, #pablobutton2').click(function(e){
-    $('#enova').hide();
+    $('#enova, #food, #garden, #portfolio').hide();
     $('#pablo').fadeIn('slow');
 })
+
+$('#foodbutton, #foodbutton2').click(function(e){
+    $('#enova, #pablo, #garden, #portfolio').hide();
+    $('#food').fadeIn('slow');
+})
+
+$('#gardenbutton, #gardenbutton2').click(function(e){
+    $('#enova, #pablo, #food, #portfolio').hide();
+    $('#garden').fadeIn('slow');
+})
+
+$('#portfoliobutton, #portfoliobutton2').click(function(e){
+    $('#enova, #pablo, #food, #garden').hide();
+    $('#portfolio').fadeIn('slow');
+})
+
+var x = document.getElementById("about");
+x.style.display = "none";
+function myFunction() {
+    var x = document.getElementById("about");
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 /*Smooth Scroll*/
 $(document).ready(function(){
