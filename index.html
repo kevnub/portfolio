@@ -7,7 +7,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <title>Portfolio</title>
+        <title>Kevin Tran</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script></script>
     </head>
@@ -27,18 +27,18 @@
                         <a href="#pablo" id="pablobutton">Pablo's Escape</a>
                     </div>
                     <div align="left" class="col-4">
-                        <a href>UK Food Trends</a>
+                        <a href="#food" id="foodbutton">UK Food Trends</a>
                     </div>
                 </div>
                 <div class="row list" style="padding-top: 30px;">
                     <div align="left" class="col-4">
-                        <a href>Website Iterations</a>
+                        <a href="#portfolio" id="portfoliobutton">Portfolio Website</a>
                     </div>
                     <div align="left" class="col-4">
-                        <a href>HBCBF Redesign</a>
+                        <a href="#garden" id="gardenbutton">Landing Page Redesign</a>
                     </div>
                     <div align="left" class="col-4" style="color: #ffff00;">
-                        <a href>*About Me</a>
+                        <a href="#about"  onclick="myFunction()" id="aboutbutton">*About Me</a>
                     </div>
                 </div>
             </div>
@@ -48,78 +48,162 @@
             <div id="hide2"  style="padding-top: 15px; display:none;"> <!--style="display:none;-->
                 <ul class="list" style="list-style-type: none;">
                     <li><a href="#enova" id="enovabutton2">Enova Redesign</a></li>
-                    <li><a href="#pablo" id="pablobutton">Pablo's Escape</a></li>
-                    <li><a href="#pablo" id="pablobutton">UK Food Trends</a></li>
-                    <li><a href="#pablo" id="pablobutton">Website Iterations</a></li>
-                    <li><a href="#pablo" id="pablobutton">HBCBF Redesign</a></li>
-                    <li><a href="#pablo" id="pablobutton" style="color: #ffff00;">*About Me</a></li>
+                    <li><a href="#pablo" id="pablobutton2">Pablo's Escape</a></li>
+                    <li><a href="#food" id="foodbutton2">UK Food Trends</a></li>
+                    <li><a href="#portfolio" id="portfoliobutton2">Portfolio Website</a></li>
+                    <li><a href="#garden" id="gardenbutton2">Landing Page Redesign</a></li>
+                    <li><a href="#about" onclick="myFunction()" id="aboutbutton2" style="color: #ffff00;">*About Me</a></li>
                 </ul>
         </div>
     </div>
+
+    </div>
+
+    <div id="about" style="margin: 5%;">
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <p class="aboutme" style="color: #ffff00;">
+                    Hi! My name is Kevin and I like to code and design.
+                    I just finished my B.S. in Computer Science at the University of Calgary and am currently based in
+                    the greater Los Angeles area.<br><br>
+                    Contact me at kevintran.robo@gmail.com
+                </p>
+            </div>
+        </div>
     </div>
 
 <!-- Enova Article-->
-    <div id="enova" class="" style="background-color: #fafafa; margin-top: 12%;">
+    <div id="enova" class="" style="background-color: #fafafa; margin-top: 12%; padding-bottom: 5%;">
         <div class="container" style="padding-left: 7%; padding-right: 7%;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-9">
                     <h1 class="title" > Enova Website Redesign </h1>
-                    <h2 style="padding-top: 20px;"> Redesign and code implementation of a small-scale website.
-                            Demo the website here.</h2>
-                    <p class="article" style="padding-bottom: 40px; font-size: 35px;" >
-                        <!--Redesign and code implementation of a small scale website. <br-->
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
+                        Redesign and code implementation of a small-scale website.
+                        Met with client and gathered information on end-users to construct the
+                        website appropriately.
+                    </h2>
+                    <a href="https://kevnub.github.io/enova/" target="_blank" class="btn btn-outline-primary">Demo the Website</a>
+                    <a href="https://github.com/kevnub/enova" target="_blank" class="btn btn-outline-primary" style="margin-left: 15px;">View the Code</a>
+                    <p style="margin-bottom: 40px; margin-top: 20px;">
                         <span class="skill">HTML</span>
                         <span class="skill">CSS</span>
                         <span class="skill">Javascript</span>
                         <span class="skill">MaterializeCSS</span>
                         <span class="skill">Sketch</span>
                     </p>
-                    <img src="enova_responsive.png" class="img-fluid" alt="Responsive image">
-                    <h1> Introduction </h1>
-                    <p class="article" >
-                        Enova is a biomimicry engineering group on campus at the University of Calgary that contacted
-                        me to redesign their website. They had already designed and implemented code their club website
-                        but wanted something that looked more professional.</br>This project took less than a week to complete
-                        since I was able to frequently meet up with the client to make sure I was providing everything they wanted. <br><br>
-                        Since I was the one to implement the code for the website, I designed something that was within my coding
-                        capabilities. I wanted to take advantage of the MaterializeCSS framework that I used to create this website
-                        and, as a result, I was able to quickly come up with high-fidelity prototypes for the client.
-                    </p>
-                    <h1 > The Home Page </h1>
-                    <p class="article">
-                        The original design for the homepage was not very user friendly. Each of the letters in
-                        the word "Innovate" were links that led to different parts of their website, but there was
-                        no indication of where each link would take the user, so I decided to scrap the idea altogether.
-                        There is also the issue where the words "Innovate", "Educate", and "Promote" were too large to even
-                        fit on a screen without having to zoom out.
-                        <br><br>
-                        From asking the club members some general questions, it seemed that the visitors of this website
-                        would be potential sponsors and people in the engineering industry who wanted to know more about the
-                        club. I then designed the homepage to clearly show the club's name, tagline, and mission statement.
-                    </p>
+                    <img src="images/enova_responsive.png" class="img-fluid" alt="Responsive image">
                 </div>
             </div>
         </div>
     </div>
 
 <!--Pablo's Escape Article-->
-    <div id="pablo" class="" style="background-color: #fafafa; margin-top: 12%;">
+    <div id="pablo" class="" style="background-color: #fafafa; margin-top: 12%; padding-bottom: 5%;">
         <div class="container" style="padding-left: 7%; padding-right: 7%;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-9">
                     <h1 class="title" > Pablo's Escape </h1>
-                    <h2 style="padding-top: 20px;">
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
                         Worked as developer and collaborator on the Android puzzle game
                         application "Pablo's Escape". Available on the Google Play Store.
                     </h2>
-                    <p class="article" style="padding-bottom: 40px;" >
-                        <!--Redesign and code implementation of a small scale website. <br-->
+                    <a href="https://play.google.com/store/apps/details?id=com.forestory.pablosescape&hl=en" target="_blank" class="btn btn-outline-primary">Get the App</a>
+                    <a href="https://github.com/jaredrooprai/PablosEscape" target="_blank" class="btn btn-outline-primary" style="margin-left: 15px;">View the Code</a>
+                    <p style="margin-bottom: 40px; margin-top: 20px;">
                         <span class="skill">C#</span>
                         <span class="skill">Android Studio</span>
                         <span class="skill">Android SDK</span>
                         <span class="skill">Unity Engine</span>
                     </p>
+                    <img src="images/pablo.png" class="img-fluid" alt="Responsive image">
                 </div>
+            </div>
+        </div>
+    </div>
+
+<!--Food Trends Article-->
+    <div id="food" class="" style="background-color: #fafafa; margin-top: 12%; padding-bottom: 5%;">
+        <div class="container" style="padding-left: 7%; padding-right: 7%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+
+                    <h1 class="title" > UK Food Trends Data Visualization </h1>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
+                        Visualized dataset within context to communicate patterns found in the data.
+                        Spatially arranged streamgraph for optimized user experience. Designed for desktop.
+                    </h2>
+                    <a href="https://kevnub.github.io/Food-Trends-Visualization/" target="_blank" class="btn btn-outline-primary">Interact with the Visualization</a>
+                    <a href="https://github.com/kevnub/Food-Trends-Visualization" target="_blank" class="btn btn-outline-primary" style="margin-left: 15px;">View the Code</a>
+                    <p style="margin-bottom: 40px; margin-top: 20px;">
+                        <span class="skill">D3.js</span>
+                        <span class="skill">Javascript</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                    </p>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 d-none d-md-block">
+                    <img src="images/foodhome.png" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/foodstream.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!--Garden Article-->
+    <div id="garden" class="" style="background-color: #fafafa; margin-top: 12%; padding-bottom: 5%;">
+        <div class="container" style="padding-left: 7%; padding-right: 7%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1 class="title" > Event Site Landing Page Redesign </h1>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
+                        Redesigned and implemented code for an existing event website (San Francisco Flower and Garden Show).
+                    </h2>
+                    <a href="https://kevnub.github.io/garden/" target="_blank" class="btn btn-outline-primary">Demo the Website</a>
+                    <a href="https://github.com/kevnub/garden" target="_blank" class="btn btn-outline-primary" style="margin-left: 15px;">View the Code</a>
+                    <p style="margin-bottom: 40px; margin-top: 20px;">
+                        <span class="skill">Bootstrap</span>
+                        <span class="skill">Javascript</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">Paroller.js</span>
+                    </p>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <img src="images/garden.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<!--Portfolio Article-->
+    <div id="portfolio" class="" style="background-color: #fafafa; margin-top: 12%; padding-bottom: 5%;">
+        <div class="container" style="padding-left: 7%; padding-right: 7%;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-9">
+                    <h1 class="title"> Portfolio Website </h1>
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">
+                        Designed and implemented code for personal portfolio website. (You're looking at it!)
+                    </h2>
+                    <a href="https://github.com/kevnub/portfolio" target="_blank" class="btn btn-outline-primary">View the Code</a>
+                    <p style="margin-bottom: 40px; margin-top: 20px;">
+                        <span class="skill">Bootstrap</span>
+                        <span class="skill">HTML</span>
+                        <span class="skill">CSS</span>
+                        <span class="skill">Javascript</span>
+                    </p>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <img src="images/portfolio.png" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
             </div>
         </div>
     </div>
