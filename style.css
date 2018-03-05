@@ -68,6 +68,12 @@ h2 {
 
 }
 
+p {
+    font-size: 20px;
+    color: #212121 ;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
 /*phone landscape*/
 @media (min-width: 576px) {
     .typing {
